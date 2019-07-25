@@ -2,10 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Product;
 use Illuminate\Http\Request;
-use File;
-use Illuminate\Support\Facades\Auth;
 
 class ProductsController extends Controller
 {
