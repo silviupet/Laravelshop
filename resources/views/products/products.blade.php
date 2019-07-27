@@ -26,6 +26,7 @@
                             <p>{{ str_limit(strtolower($product->description), 50) }}</p>
                             <p><strong>Price: </strong> {{ $product->price }}$</p>
                             <p class="btn-holder"><a href="{{ url('add-to-cart/'.$product->id) }}" class="btn btn-warning btn-block text-center" role="button">Add to cart</a> </p>
+                            <p class="btn-holder"><a href="{{ url('products/'.$product->id) }}" class="btn btn-warning btn-block text-center" role="button">More ...</a> </p>
                         </div>
                     </div>
                 </div>
