@@ -12,7 +12,7 @@
 Route::get('/', function () {
     return view('welcome');
 });
-//Auth::routes();
+Auth::routes();
 /**
  * Login Route(s)
  */
@@ -43,3 +43,7 @@ Route::get('add-to-cart/{id}', 'ProductsController@addToCart');
 Route::patch('update-cart', 'ProductsController@updateCart');
 Route::delete('remove-from-cart', 'ProductsController@removeCart');
 Route::resource('products', 'ProductsController');
+
+Route::get('/home', function () {
+    return view('home');
+});
